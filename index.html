@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link type="text/css" rel="stylesheet" href="turing.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="turing.js"></script>
     <script type="text/javascript">
+    var turing;
     $(document).ready(function(){
-        loadTuring();
+        turing = new Turing($('.turingmachine'), { 'tapelen' : 10,
+                                                   'symbols' : [0,1, 2, 3, 4, 5, 6, 7],
+                                                 });
     });
     </script>
+    <style type="text/css">    
+        .symbol-0 {
+            background-color: #333;
+        }
+        .symbol-1 {
+            background-color: #D22;
+        }
+        .symbol-2 {
+            background-color: #2D2;
+        }
+        .symbol-3 {
+            background-color: #22D;
+        }
+        .symbol-4 {
+            background-color: #DD2;
+        }
+        .symbol-5 {
+            background-color: #D2D;
+        }
+        .symbol-6 {
+            background-color: #2DD;
+        }
+        .symbol-7 {
+            background-color: #DDD;
+        }
+    </style>
 </head>
 <body>
-    <div id="turing">
-    
+    <div class="turingmachine">
+        <div class="tape"></div>
+        <div class="pos-ind"></div>
     </div>
 </body>
 </html>
