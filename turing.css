@@ -1,0 +1,31 @@
+div.turingmachine {
+    margin: auto;
+    width: 1px;
+    overflow: visible;
+}
+
+div.tape {
+    overflow: visible;
+    height: 30px;
+    /*width: 999999px;*/
+    margin: auto;
+    padding: 0;
+    position: relative;
+}
+span.tapeitem {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #888;
+    display: block;
+    float: left;
+}
+
+div.pos-ind {
+    width: 0px;
+    height: 0px;
+    border-color: transparent transparent #ffa500 transparent;
+    border-style: solid;
+    border-width: 15px 15px 15px 15px;
+    margin-top: -15px;
+    position: relative;
+}
